@@ -3,8 +3,9 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
   def show
+    @products = Product.find(params[:id])
   end
   def edit
-    @product = Product.findby()
+    
   end
 end
